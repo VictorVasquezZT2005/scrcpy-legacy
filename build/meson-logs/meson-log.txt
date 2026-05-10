@@ -1,0 +1,336 @@
+Build started at 2026-05-09T22:15:46.601425
+Main binary: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+Build Options: -Dprebuilt_server=./scrcpy-server-v3.3.4 -Dbuildtype=release
+Python system: Darwin
+The Meson build system
+Version: 0.52.0
+Source dir: /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy
+Build dir: /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build
+Build type: native build
+Project name: scrcpy
+Project version: 3.3.4
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/sanitycheckc.c -o /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/sanitycheckc.exe -pipe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (clang 8.0.0 "Apple LLVM version 8.0.0 (clang-800.0.42.1)")
+C linker for the build machine: APPLE ld 274.2
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/sanitycheckc.c -o /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/sanitycheckc.exe -pipe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (clang 8.0.0 "Apple LLVM version 8.0.0 (clang-800.0.42.1)")
+C linker for the host machine: APPLE ld 274.2
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.HOST at ['/usr/local/bin/pkg-config']
+Found pkg-config: /usr/local/bin/pkg-config (0.29.2)
+Determining dependency 'libavformat' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libavformat` -> 0
+58.29.100
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --cflags libavformat` -> 0
+-I/usr/local/include
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libavformat --libs` -> 0
+-L/usr/local/lib -lavformat
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libavformat --libs` -> 0
+-L/usr/local/lib -lavformat
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libavformat --libs --static` -> 0
+-L/usr/local/lib -lavformat -lm -lbz2 -lz -Wl,-framework,CoreFoundation -Wl,-framework,Security -lavcodec -liconv -lm -lz -framework AudioToolbox -pthread -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices -lswresample -lm -lavutil -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Running compile:
+Working directory:  /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmp8tmkw_qq
+Command line:  cc /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmp8tmkw_qq/testfile.c -o /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmp8tmkw_qq/output.exe -pipe -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main() {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpedsdhq9i
+Command line:  cc /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpedsdhq9i/testfile.c -o /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpedsdhq9i/output.obj -pipe -c -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ programs: =/Library/Developer/CommandLineTools/usr/bin
+libraries: =/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0
+
+Compiler stderr:
+ 
+Run-time dependency libavformat found: YES 58.29.100
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libavcodec' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libavcodec` -> 0
+58.54.100
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --cflags libavcodec` -> 0
+-I/usr/local/include
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libavcodec --libs` -> 0
+-L/usr/local/lib -lavcodec
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libavcodec --libs` -> 0
+-L/usr/local/lib -lavcodec
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libavcodec --libs --static` -> 0
+-L/usr/local/lib -lavcodec -liconv -lm -lz -framework AudioToolbox -pthread -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices -lswresample -lm -lavutil -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Run-time dependency libavcodec found: YES 58.54.100
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libavutil' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libavutil` -> 0
+56.31.100
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --cflags libavutil` -> 0
+-I/usr/local/include
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libavutil --libs` -> 0
+-L/usr/local/lib -lavutil
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libavutil --libs` -> 0
+-L/usr/local/lib -lavutil
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libavutil --libs --static` -> 0
+-L/usr/local/lib -lavutil -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Run-time dependency libavutil found: YES 56.31.100
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libswresample' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libswresample` -> 0
+3.5.100
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --cflags libswresample` -> 0
+-I/usr/local/include
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libswresample --libs` -> 0
+-L/usr/local/lib -lswresample
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libswresample --libs` -> 0
+-L/usr/local/lib -lswresample
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libswresample --libs --static` -> 0
+-L/usr/local/lib -lswresample -lm -lavutil -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Run-time dependency libswresample found: YES 3.5.100
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'sdl2' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion sdl2` -> 0
+2.0.7
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --cflags sdl2` -> 0
+-I/usr/local/include/SDL2 -I/usr/local/include
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config sdl2 --libs` -> 0
+-F/Library/Frameworks -framework SDL2
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config sdl2 --libs` -> 0
+-F/Library/Frameworks -framework SDL2
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config sdl2 --libs --static` -> 0
+-F/Library/Frameworks -framework SDL2
+Run-time dependency sdl2 found: YES 2.0.7
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libusb-1.0' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libusb-1.0` -> 0
+1.0.23
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --cflags libusb-1.0` -> 0
+-I/usr/local/include/libusb-1.0
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libusb-1.0 --libs` -> 0
+-L/usr/local/lib -lusb-1.0
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libusb-1.0 --libs` -> 0
+-L/usr/local/lib -lusb-1.0
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config libusb-1.0 --libs --static` -> 0
+-L/usr/local/lib -lusb-1.0 -lobjc -Wl,-framework,IOKit -Wl,-framework,CoreFoundation
+Run-time dependency libusb-1.0 found: YES 1.0.23
+Running compile:
+Working directory:  /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpaf4fvx9f
+Command line:  cc /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpaf4fvx9f/testfile.c -o /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpaf4fvx9f/output.exe -pipe -O0 -std=c11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define strdup meson_disable_define_of_strdup
+        
+        #include <limits.h>
+        #undef strdup
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strdup ();
+        
+        #if defined __stub_strdup || defined __stub___strdup
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return strdup ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "strdup" : YES 
+Running compile:
+Working directory:  /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpat2ibt7t
+Command line:  cc /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpat2ibt7t/testfile.c -o /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpat2ibt7t/output.exe -pipe -O0 -std=c11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define asprintf meson_disable_define_of_asprintf
+        
+        #include <limits.h>
+        #undef asprintf
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char asprintf ();
+        
+        #if defined __stub_asprintf || defined __stub___asprintf
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return asprintf ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpat2ibt7t/testfile.c:17:28: warning: format string missing [-Wformat]
+          return asprintf ();
+                 ~~~~~~~~  ^
+1 warning generated.
+
+Checking for function "asprintf" : YES 
+Running compile:
+Working directory:  /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpbnf5l2da
+Command line:  cc /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpbnf5l2da/testfile.c -o /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpbnf5l2da/output.exe -pipe -O0 -std=c11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define vasprintf meson_disable_define_of_vasprintf
+        
+        #include <limits.h>
+        #undef vasprintf
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char vasprintf ();
+        
+        #if defined __stub_vasprintf || defined __stub___vasprintf
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return vasprintf ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpbnf5l2da/testfile.c:17:29: warning: format string missing [-Wformat]
+          return vasprintf ();
+                 ~~~~~~~~~  ^
+1 warning generated.
+
+Checking for function "vasprintf" : YES 
+Running compile:
+Working directory:  /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpduw3y_i5
+Command line:  cc /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpduw3y_i5/testfile.c -o /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmpduw3y_i5/output.exe -pipe -O0 -std=c11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define nrand48 meson_disable_define_of_nrand48
+        
+        #include <limits.h>
+        #undef nrand48
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char nrand48 ();
+        
+        #if defined __stub_nrand48 || defined __stub___nrand48
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return nrand48 ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "nrand48" : YES 
+Running compile:
+Working directory:  /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmp1tggh_gm
+Command line:  cc /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmp1tggh_gm/testfile.c -o /Users/vvasq/Documents/Proyectos/Desktop/C/scrcpy/build/meson-private/tmp1tggh_gm/output.exe -pipe -O0 -std=c11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define jrand48 meson_disable_define_of_jrand48
+        
+        #include <limits.h>
+        #undef jrand48
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char jrand48 ();
+        
+        #if defined __stub_jrand48 || defined __stub___jrand48
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return jrand48 ();
+        }
